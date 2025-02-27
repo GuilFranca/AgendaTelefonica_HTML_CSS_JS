@@ -1,0 +1,14 @@
+.card__contato{
+    /* border: 1px solid white; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon__user, .btn__editar, .btn__apagar{
+    font-size: 25px;
+}
+
+.contato__nome{
+ font-size: 18px;
+}

@@ -84,3 +84,14 @@ select {
 	font-weight: inherit;
 	font-family: inherit;
 }
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
