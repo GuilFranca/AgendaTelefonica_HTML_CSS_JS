@@ -1,16 +1,16 @@
 .container__contato{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     /* border: 1px solid white; */
     align-items: center;
 }
 
 .card__contato {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
-    width: 90%; /* Ocupa toda a largura do contêiner pai */
+    width: 94%; /* Ocupa toda a largura do contêiner pai */
     justify-content: space-between; /* Distribui o espaço entre os itens */
     padding: 10px; /* Adiciona um espaçamento interno */
     border: 1px solid #ccc; /* Apenas para visualização */

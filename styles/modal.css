@@ -1,0 +1,33 @@
+.modal__visualizar{
+    width: 50%;
+    height: 15vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: #fff; /* Só pra garantir contraste */
+    padding: 20px; /* Dá uma respirada no conteúdo */
+    border-radius: 10px; /* Deixa mais estiloso */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Um charminho */
+}
+
+.modal__visualizar__descricao{
+    font-size: 18px;
+}
+
+.container__btns__modal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn__modal{
+    color: #fff;
+    background-color: black;
+    width: 75px;
+    padding: 8px 0;
+    border-radius: 10px;
+
+}
+
+.modal__visualizar::backdrop{
+    background-color: rgb(0, 0, 0,.3);
+}

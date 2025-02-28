@@ -12,3 +12,6 @@
 
 /* Importando o estilo do btn__add */
 @import url('./btn__add.css');
+
+/* Importando o estilo do modal */
+@import url('./modal.css');
