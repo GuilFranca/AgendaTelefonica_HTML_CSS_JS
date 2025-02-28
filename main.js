@@ -1,15 +1,27 @@
 const containerContatos = document.querySelector('.container__contato');
 const btnAdd = document.querySelector('.btn__add');
+let contatos = [
+    {
+        "nome": "Guilherme França",
+        "numero": 30362009
+    },
+    {
+        "nome": "Michael jackson da silva",
+        "numero": 12345678
+    },
+    {
+        "nome": "Robert Anderson",
+        "numero": 12375678
+    },
+    {
+        "nome": "Lucas",
+        "numero": 15486238
+    }
+]
 
 function mostrarContatos() {
-    // Consumindo os dados do arquivo Json
-    fetch("bank.json").then((response) => {
-        response.json().then((dados) => {
-
-            console.log(dados.contatos);
-
-            dados.contatos.forEach((contato) => {
-                containerContatos.innerHTML += `
+    contatos.forEach((contato) => {
+        containerContatos.innerHTML += `
                     <div class="card__contato">
                         <i class="ri-user-fill icon__user"></i>
                         <h2 class="contato__nome">${contato.nome}</h2>
@@ -17,14 +29,31 @@ function mostrarContatos() {
                         <i class="ri-delete-bin-6-line btn__apagar"></i>
                     </div>
                     `
-            });
-
-        });
-    })
+    });
 }
 
 mostrarContatos();
 
+// Apagar contato
+containerContatos.addEventListener("click", function (event) {
+    if (event.target.classList.contains('btn__apagar')) {
+        const cardContato = event.target.closest('.card__contato');
+        const contatoNomeApagar = cardContato.querySelector('.contato__nome').innerText;
+
+        // Remove o contato da lista de contatos
+        contatos = contatos.filter(contato => contato.nome !== contatoNomeApagar);
+
+        // Atualiza a interface
+        containerContatos.innerHTML = '';
+
+        mostrarContatos();
+
+        console.log(contatos); // Exibe a lista atualizada no console
+    }
+})
+
+
+// Modla
 const btnsModalVisualizar = document.querySelector('.contato__nome');
 const modal = document.querySelector('.modal__visualizar');
 
