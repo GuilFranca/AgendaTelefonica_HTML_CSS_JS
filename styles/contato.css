@@ -2,22 +2,26 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    /* border: 1px solid white; */
+    align-items: center;
 }
 
-.card__contato{
-    /* border: 1px solid white; */
+.card__contato {
     display: flex;
     gap: 10px;
     align-items: center;
-    width: 95%;
-    justify-content: space;
+    width: 90%; /* Ocupa toda a largura do contêiner pai */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    padding: 10px; /* Adiciona um espaçamento interno */
+    border: 1px solid #ccc; /* Apenas para visualização */
+    border-radius: 8px; /* Borda arredondada */
 }
 
 .icon__user, .btn__editar, .btn__apagar{
     font-size: 25px;
 }
 
-.contato__nome{
+.contato__nome {
     font-size: 18px;
     display: -webkit-box; /* Define a exibição do elemento como flexbox usando o "-webkit-box" para que as outras propriedades "webkit" funcionem */
     -webkit-box-orient: vertical; /* Define o flexbox como vertical, então os elementos ficaram um em baixo do outro */
@@ -25,6 +29,7 @@
     overflow: hidden; /* Esconde o que vazar do limite da linha */
     text-overflow: ellipsis; /* Insere no lugar do texto que está sendo escondido "..." */
     line-height: 1.5; /* Altura da linha */
-    max-height: 3em; 
-    width: 100%; /* Define uma largura para o elemento */
+    max-height: 3em;
+    flex-grow: 1; /* Ocupa o espaço restante na div */
+    margin: 0 10px; /* Adiciona um espaçamento entre o nome e os ícones */
 }

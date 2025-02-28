@@ -92,6 +92,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-	gap: 10px;
     font-family: Arial, Helvetica, sans-serif;
+	gap: 10px;
 }
