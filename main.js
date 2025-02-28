@@ -109,6 +109,9 @@ bodyPage.addEventListener("click", function (event) {
 
             contatos.push({ nome, numero });
 
+            modal.close();
+            modal.style.display = 'none';
+
             containerContatos.innerHTML = '';
 
             mostrarContatos();
