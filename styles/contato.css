@@ -1,8 +1,16 @@
+.container__contato{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .card__contato{
     /* border: 1px solid white; */
     display: flex;
     gap: 10px;
     align-items: center;
+    width: 95%;
+    justify-content: space;
 }
 
 .icon__user, .btn__editar, .btn__apagar{
@@ -10,5 +18,13 @@
 }
 
 .contato__nome{
- font-size: 18px;
+    font-size: 18px;
+    display: -webkit-box; /* Define a exibição do elemento como flexbox usando o "-webkit-box" para que as outras propriedades "webkit" funcionem */
+    -webkit-box-orient: vertical; /* Define o flexbox como vertical, então os elementos ficaram um em baixo do outro */
+    -webkit-line-clamp: 1; /* Limita o número de linhas que seram exibidas no elemento */
+    overflow: hidden; /* Esconde o que vazar do limite da linha */
+    text-overflow: ellipsis; /* Insere no lugar do texto que está sendo escondido "..." */
+    line-height: 1.5; /* Altura da linha */
+    max-height: 3em; 
+    width: 100%; /* Define uma largura para o elemento */
 }

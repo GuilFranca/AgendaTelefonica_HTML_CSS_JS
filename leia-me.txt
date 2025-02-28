@@ -1,0 +1,12 @@
+Permitindo política de execução de scripts (apenas Windows)
+- Abra o powershell como adm e digite o comando a seguir para verifircar política de execução atual:
+Get-ExecutionPolicy
+
+- Caso esteja como "Restricted", está configuração impede a execução de scripts.
+- Execute o comando a seguir para permitir a execução de scripts no seu computador:
+Set-ExecutionPolicy RemoteSigned
+
+-O PowerShell pode solicitar confirmação para realizar a operação. Pressione "S" (Sim) ou "Y" (Yes) dependendo da linguagem do seu terminal e pressione Enter para confirmar.
+
+Ao final do CURSO, é uma boa prática reverter a política de execução de scripts para o vaor original, para garantir a segurança do sistema.
+Set-ExecutionPolicy Restricted
