@@ -208,3 +208,29 @@ bodyPage.addEventListener("click", function (event) {
     }
 
 })
+
+const barraPesquisa = document.querySelector('.pesquisar__input');
+barraPesquisa.addEventListener('input', filtrarPesquisa);
+
+function filtrarPesquisa() {
+    const cardsContatos = document.querySelectorAll('.card__contato'); // Seleciona todos os cards de contato
+    const valorFiltro = barraPesquisa.value.toLowerCase(); // Valor da pesquisa em minúsculas
+
+    if (valorFiltro !== '') {
+        for (let card of cardsContatos) {
+            const nomeContato = card.querySelector('.contato__nome').textContent.toLowerCase();
+
+            // Verifica se o nome do contato inclui o valor da pesquisa
+            if (!nomeContato.includes(valorFiltro)) {
+                card.style.display = 'none'; // Oculta o card
+            } else {
+                card.style.display = 'flex'; // Mostra o card
+            }
+        }
+    } else {
+        // Se a barra de pesquisa estiver vazia, mostra todos os cards
+        for (let card of cardsContatos) {
+            card.style.display = 'flex';
+        }
+    }
+}
