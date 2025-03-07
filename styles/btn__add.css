@@ -1,6 +1,13 @@
-.btn__add{
+.btn__add {
     position: fixed;
     font-size: 55px;
-    right: 25px;
-    top: 700px;
+    right: 5%;
+    top: 90%;
+}
+
+@media screen and (min-width: 768px) {
+    .btn__add {
+        right: 2%;
+        top: 85%;
+    }
 }
