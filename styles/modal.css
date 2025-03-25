@@ -1,25 +1,29 @@
-.modal__visualizar{
+.modal__visualizar {
     width: 50%;
     height: 15vh;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    background-color: #fff; /* Só pra garantir contraste */
-    padding: 20px; /* Dá uma respirada no conteúdo */
-    border-radius: 10px; /* Deixa mais estiloso */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Um charminho */
+    background-color: #fff;
+    /* Só pra garantir contraste */
+    padding: 20px;
+    /* Dá uma respirada no conteúdo */
+    border-radius: 10px;
+    /* Deixa mais estiloso */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Um charminho */
 }
 
-.modal__visualizar__descricao{
+.modal__visualizar__descricao {
     font-size: 18px;
 }
 
-.container__btns__modal{
+.container__btns__modal {
     display: flex;
     justify-content: space-between;
 }
 
-.btn__modal{
+.btn__modal {
     color: #fff;
     background-color: black;
     width: 75px;
@@ -28,14 +32,14 @@
 
 }
 
-.modal__visualizar::backdrop{
-    background-color: rgb(0, 0, 0,.3);
+.modal__visualizar::backdrop {
+    background-color: rgb(0, 0, 0, .3);
 }
 
-.titulo__modal{
+.titulo__modal {
     margin: auto;
 }
 
-.input__modal{
+.input__modal {
     border: 1px solid black;
 }
